@@ -168,3 +168,155 @@ footer h4 {
 .footer-social img:hover {
   transform: scale(1.1);
 }
+@media (max-width: 1200px) {
+  .grid figure .img-box {
+    width: 340px;
+    height: 380px;
+  }
+}
+@media (max-width: 1100px) {
+  .grid figure .img-box {
+    width: 300px;
+    height: 340px;
+  }
+}
+@media (max-width: 1000px) {
+  .grid {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid figure .img-box {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media (max-width: 1000px) {
+  .grid {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid figure .img-box {
+    width: 340px;
+    height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid figure .img-box {
+    width: 300px;
+    height: 340px;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline;
+    margin: 8px 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links nav {
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+    margin-top: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid figure .img-box {
+    width: 260px;
+    height: 300px;
+  }
+  header {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline;
+    margin: 8px 10px;
+    font-size: 14px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links nav {
+    align-items: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid figure .img-box {
+    width: 380px;
+    height: 420px;
+  }
+}
+@media (max-width: 420px) {
+  .grid {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid figure .img-box {
+    width: 340px;
+    height: 380px;
+  }
+  .gallery img {
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 360px) {
+  .grid {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid figure .img-box {
+    width: 280px;
+    height: 320px;
+  }
+  .gallery img {
+    width: 100%;
+    object-fit: cover;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  nav a {
+    margin: 8px 6px;
+  }
+}

@@ -267,3 +267,184 @@ footer h4 {
 .footer-social img:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 180px;
+  }
+  .about-section {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 60px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .cta {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .cta-intro {
+    width: 100%;
+    text-align: center;
+  }
+
+  .cta-features {
+    width: 60%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: inline;
+    margin: 8px 10px;
+    font-size: 14px;
+  }
+  nav {
+    margin-top: 10px;
+  }
+
+  .cta-features {
+    width: 90%;
+    margin-top: 20px;
+  }
+  .about-intro {
+    height: 300px;
+  }
+
+  .about-intro h1 {
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .about-section {
+    margin-top: 100px;
+  }
+
+  .badge {
+    right: 10px;
+    padding: 10px;
+  }
+
+  .stats {
+    left: 10px;
+    padding: 10px;
+  }
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+    bottom: 20px;
+  }
+
+  .cta-intro h2 {
+    font-size: 24px;
+  }
+
+  .cta-intro p {
+    font-size: 16px;
+  }
+
+  .cta-features h3 {
+    font-size: 24px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links nav {
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-intro {
+    height: 250px;
+  }
+  .about-section {
+    margin-top: 80px;
+  }
+  .about-intro h1 {
+    font-size: 22px;
+  }
+
+  .features li {
+    font-size: 14px;
+  }
+
+  .services ul li {
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 20px;
+  }
+
+  .footer-newsletter input {
+    padding: 10px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+}
+@media (max-width: 330px) {
+  .about-intro {
+    height: 250px;
+  }
+  .about-section {
+    margin-top: 80px;
+  }
+  .about-intro h1 {
+    font-size: 22px;
+  }
+
+  .features li {
+    font-size: 14px;
+  }
+
+  .services ul li {
+    font-size: 14px;
+  }
+
+  .cta {
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline;
+    margin: 8px 6px;
+    font-size: 14px;
+  }
+  .footer-newsletter input {
+    padding: 10px;
+  }
+
+  .footer-newsletter button {
+    width: 100%;
+  }
+  .cta-features {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

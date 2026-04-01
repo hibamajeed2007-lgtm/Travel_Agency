@@ -245,4 +245,8 @@ footer h4 {
   .contact-section {
     flex-direction: column;
   }
+  footer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
