@@ -4,16 +4,14 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  background-color: #f2f6ef;
-}
+
 .container {
   display: flex;
   align-items: stretch;
   justify-content: center;
   flex-direction: column;
 }
-header {
+.navbar {
   width: 100%;
   background: linear-gradient(#f2f6ef, lightblue);
   display: flex;
@@ -22,8 +20,11 @@ header {
   padding: 10px;
   border-top: 4px solid #341c02;
   border-bottom: 4px solid #341c02;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
-header img {
+.navbar img {
   height: auto;
 }
 nav a {
@@ -40,7 +41,7 @@ nav a {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #f2f6ef;
+  color: #341c02;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,21 +52,14 @@ nav a {
   border-radius: 12px;
   padding: 20px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial;
-}
 
-body {
-  background: #f4f4f4;
-}
 .about-section {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 100px;
+  background-color: #f2f6ef;
+  color: #341c02;
 }
 .about {
   display: flex;
@@ -78,6 +72,7 @@ body {
   position: relative;
   width: 50%;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main-image img {
@@ -152,6 +147,62 @@ body {
 .services ul li {
   margin-bottom: 10px;
 }
+
+.cta {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../IMAGES/plaaaaaaaa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 50px 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 450px;
+  max-width: 100%;
+}
+.cta-intro {
+  color: #f2f6ef;
+  width: 50%;
+}
+.cta-intro h2 {
+  font-size: 32px;
+  font-family: new;
+  margin: 10px 0 10px 0;
+}
+
+.cta-intro p {
+  font-size: 20px;
+  font-family: new1;
+}
+.cta-features {
+  background-color: #f2f6ef;
+  color: black;
+  padding: 5px;
+  border-radius: 15px;
+  width: 30%;
+}
+.features-list i {
+  margin-right: 10px;
+  color: rgb(11, 11, 157);
+}
+.features-list li {
+  color: #341c02;
+  margin: 25px 0 25px 25px;
+  list-style: none;
+}
+.cta-features h3 {
+  font-size: 36px;
+  font-family: new;
+  margin-top: 8px;
+  margin-left: 25px;
+  color: #341c02;
+}
+.cta-features p {
+  font-size: 16px;
+}
+
 footer {
   display: flex;
   justify-content: space-evenly;

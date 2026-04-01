@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <script src="JS/jquery.js"></script>
     <link rel="stylesheet" href="CSS/contact.css" />
+    <script src="JS/contact.js"></script>
   </head>
   <body>
     <div class="container">
-      <header>
+      <header class="navbar">
         <a href="home.html">
-          <img src="IMAGES/logo1.png" alt="" width="240px" height="245px" />
+          <img src="IMAGES/logo1.png" alt="" width="210px" height="225px" />
         </a>
         <nav>
           <a href="home.html">Home</a>
@@ -21,9 +23,9 @@
       </header>
 
       <section class="hero">
-        <figure class="hero-image">
+        <!-- <figure class="hero-image">
           <img src="IMAGES/hero.jpg" alt="Keep in touch" />
-        </figure>
+        </figure> -->
 
         <section class="hero-content">
           <h1>Keep in Touch</h1>
@@ -53,6 +55,84 @@
             <button type="submit">Send Message</button>
           </form>
         </article>
+      </section>
+
+      <section class="faq-section">
+        <header>
+          <h1>FAQs</h1>
+        </header>
+
+        <section id="accordion">
+          <article class="faq-item">
+            <button class="faq-question">
+              What time is check-in and check-out?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Check-in starts at 2:00 PM and check-out is by 11:00 AM. Early
+                check-in or late check-out may be available upon request.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              How can I check room availability?
+            </button>
+            <div class="faq-answer">
+              <p>
+                You can check room availability using our booking form. Select
+                your dates and room type to see if it's available instantly.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              What is your cancellation policy?
+            </button>
+            <div class="faq-answer">
+              <p>
+                We offer free cancellation up to 24 hours before your check-in
+                date. Late cancellations may be charged for one night.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">Do you offer free Wi-Fi?</button>
+            <div class="faq-answer">
+              <p>
+                Yes, we provide complimentary high-speed Wi-Fi in all rooms and
+                public areas of the hotel.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Is breakfast included in the booking?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Breakfast is included in selected room packages. Please check
+                your booking details for confirmation.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question">
+              Can I request extra beds or special services?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, you can request extra beds, airport pickup, or other
+                services in the “Special Requests” section of the booking form.
+              </p>
+            </div>
+          </article>
+        </section>
       </section>
 
       <footer>

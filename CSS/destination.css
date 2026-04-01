@@ -22,6 +22,9 @@ header {
   padding: 10px;
   border-top: 4px solid #341c02;
   border-bottom: 4px solid #341c02;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 header img {
   height: auto;
@@ -34,7 +37,7 @@ nav a {
 }
 
 .grid {
-  margin-top: 80px;
+  margin-top: 180px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
