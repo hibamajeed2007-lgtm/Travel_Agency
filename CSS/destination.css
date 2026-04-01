@@ -35,7 +35,9 @@ nav a {
   margin-right: 10px;
   color: #341c02;
 }
-
+nav a:hover {
+  color: #47769c;
+}
 .grid {
   margin-top: 180px;
   display: grid;

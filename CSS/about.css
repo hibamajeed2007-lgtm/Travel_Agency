@@ -33,6 +33,9 @@ nav a {
   margin-right: 10px;
   color: #341c02;
 }
+nav a:hover {
+  color: #47769c;
+}
 .about-intro {
   background-image: url("../IMAGES/plane.jpg");
   width: 100%;

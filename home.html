@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+
+    <!-- FIXED favicon -->
+    <link rel="icon" href="IMAGES/fev.png" type="image/png" />
+
+    <title>Travel Website</title>
+
+    <!-- FIXED jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <link rel="stylesheet" href="CSS/home.css" />
+    <script src="JS/home.js"></script>
   </head>
   <body>
     <div class="container">
@@ -14,11 +23,111 @@
         </a>
         <nav>
           <a href="home.html">Home</a>
-          <a href="about.html">About</a>
           <a href="destination.html">Destinations</a>
+          <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
       </header>
+      <section id="popup-overlay"></section>
+
+      <section id="popup-modal">
+        <button id="close-btn">&times;</button>
+
+        <div class="popup-container">
+          <div class="popup-image">
+            <img src="IMAGES/fev1.png" />
+          </div>
+
+          <div class="popup-form">
+            <h2>Stay Connected For Amazing Offers</h2>
+
+            <form id="contact-form">
+              <label>Phone No</label>
+              <input type="text" required />
+
+              <label>Email Address</label>
+              <input type="email" required />
+
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- HERO -->
+      <section class="hero">
+        <img src="IMAGES/bea.jpg" class="hero-img" />
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+          <h1>Find your next <br />Travel destination</h1>
+          <p>With world wide coverage</p>
+          <button class="btn">Learn More</button>
+        </div>
+      </section>
+
+      <!-- SECTIONS -->
+      <section class="section grid">
+        <div class="text">
+          <h2>Honeymoon</h2>
+          <p>
+            Luxury honeymoon experience with private dinners and scenic tours.
+          </p>
+          <a href="#">See destinations →</a>
+        </div>
+        <div class="image">
+          <img src="IMAGES/d1.jpg" />
+        </div>
+      </section>
+
+      <section class="section grid reverse">
+        <div class="image">
+          <img src="IMAGES/d2.jpg" />
+        </div>
+        <div class="text">
+          <h2>Destinations</h2>
+          <ul class="destinations">
+            <li>Turkey →</li>
+            <li>Montenegro →</li>
+            <li>Serbia →</li>
+            <li>Jordan →</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section grid">
+        <div class="text">
+          <h2>Hot Deals</h2>
+          <p>Book now and get 15% off your dream vacation!</p>
+          <a href="#">See destinations →</a>
+        </div>
+        <div class="image">
+          <img src="IMAGES/d3.jpg" />
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="reviews">
+        <h2>What Our Guests Say</h2>
+
+        <div class="review-container">
+          <div class="review-card">
+            <p>Amazing stay and great service!</p>
+            <h4>- Sarah ⭐⭐⭐⭐⭐</h4>
+          </div>
+
+          <div class="review-card">
+            <p>Best experience ever!</p>
+            <h4>- Ambreen ⭐⭐⭐⭐</h4>
+          </div>
+
+          <div class="review-card">
+            <p>Very relaxing environment.</p>
+            <h4>- Ahmed ⭐⭐⭐⭐⭐</h4>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <section class="footer-links">
