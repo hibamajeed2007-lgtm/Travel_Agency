@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/home.css" />
   </head>
   <body>
     <div class="container">
@@ -21,12 +21,45 @@
       </header>
 
       <footer>
-        <h4>Quick Links:</h4>
-        <br />
-        <a href="home.html">Home</a>
-        <a href="destination.html">Destinations</a>
-        <a href="contact.html">Contact</a><br />
-        <p>© 2026 Stay Loft. All rights reserved.</p>
+        <section class="footer-links">
+          <h4>Quick Links</h4>
+          <nav>
+            <a href="home.html">Home</a>
+            <a href="destination.html">Destinations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </section>
+
+        <section class="footer-newsletter">
+          <h4>Subscribe Our Newsletter For Getting Quick Updates</h4>
+
+          <form>
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email Address"
+              required
+            />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </section>
+
+        <section class="footer-social">
+          <h4>Follow Us</h4>
+
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="IMAGES/facebook.jpg" alt="Facebook" width="40" />
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="IMAGES/instagramm.jpg" alt="Instagram" width="40" />
+          </a>
+
+          <a href="https://x.com/" target="_blank">
+            <img src="IMAGES/twitter.jpg" alt="Twitter" width="40" />
+          </a>
+        </section>
       </footer>
     </div>
   </body>

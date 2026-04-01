@@ -35,6 +35,7 @@ nav a {
 .hero {
   position: relative;
   height: 300px;
+  width: 100%;
 }
 
 .hero-image img {
@@ -69,6 +70,7 @@ nav a {
   gap: 20px;
   padding: 40px;
   background: #f4f6ef;
+  width: 100%;
 }
 
 .map iframe {
@@ -130,6 +132,70 @@ button:hover {
 label.error {
   color: red;
   font-size: 12px;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background: lightblue;
+  flex-wrap: wrap;
+  color: #341c02;
+  width: 100%;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
+.footer-links nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-newsletter input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+.footer-newsletter {
+  text-align: center;
+}
+.footer-newsletter button {
+  background: #f4b400;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-newsletter button:hover {
+  background: #d99a00;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
