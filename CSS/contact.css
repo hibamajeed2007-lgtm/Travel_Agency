@@ -63,13 +63,19 @@ nav a:hover {
   text-align: center;
   z-index: 1;
 }
-
+.hero-content a {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
 .hero-content h1 {
   font-size: 42px;
 }
 
 .contact-section {
   display: flex;
+  align-items: center;
   gap: 20px;
   padding: 40px;
   background: #f4f6ef;

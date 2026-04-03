@@ -100,7 +100,10 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  width: 750px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
   border-radius: 10px;
   z-index: 1000;
   padding: 20px;
@@ -122,7 +125,8 @@ nav a:hover {
 }
 
 .popup-image img {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 8px;
 }
 
@@ -156,6 +160,69 @@ nav a:hover {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .popup-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .popup-image img {
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .popup-form h2 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .popup-form input {
+    padding: 8px;
+  }
+
+  .popup-form button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #popup-modal {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .popup-image img {
+    max-width: 150px;
+  }
+
+  .popup-form h2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #popup-modal {
+    width: 95%;
+    padding: 10px;
+  }
+
+  #close-btn {
+    font-size: 20px;
+  }
+
+  .popup-form h2 {
+    font-size: 16px;
+  }
+
+  .popup-form input,
+  .popup-form button {
+    padding: 8px;
+    font-size: 14px;
+  }
 }
 footer {
   display: flex;
@@ -221,19 +288,7 @@ footer h4 {
 .footer-social img:hover {
   transform: scale(1.1);
 }
-@media (max-width: 768px) {
-  #popup-modal {
-    width: 90%;
-  }
 
-  .popup-container {
-    flex-direction: column;
-  }
-
-  .popup-image img {
-    width: 100%;
-  }
-}
 .hero {
   position: relative;
   height: 90vh;
@@ -491,19 +546,6 @@ footer h4 {
 
   /* REVIEW CARDS */
   .review-card {
-    width: 100%;
-  }
-
-  /* POPUP */
-  #popup-modal {
-    width: 95%;
-  }
-
-  .popup-container {
-    flex-wrap: wrap;
-  }
-
-  .popup-image img {
     width: 100%;
   }
 

@@ -27,3 +27,18 @@ $(document).ready(function () {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        gap: "20px",
+        autoplay: true,
+        pauseOnHover: true,
+
+        breakpoints: {
+            1024: { perPage: 2 },
+            768: { perPage: 1 },
+        },
+    }).mount();
+});
